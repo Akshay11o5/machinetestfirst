@@ -1,36 +1,38 @@
 <div class="container">
   <div class="col-md-12">
-    <table class="table table-bordered bg-success text-white">
-      <thead class="bg-dark">
-        <tr>
-          <th>Sr.no</th>
-          <th>name</th>
-          <th>country</th>
-          <th>odiDebut</th>
-          <th>matches</th>
-          <th>runs</th>
-          <th>highestScore</th>
-          <th>centuries</th>
-          <th>fifties</th>
-          <th>battingAverage</th>
-          <th>wickets</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let crickter of cricketers; let i = index">
-          <td>{{ i + 1 }}</td>
-          <td>{{ crickter.name }}</td>
-          <td>{{ crickter.country }}</td>
-          <td>{{ crickter.odiDebut }}</td>
-          <td>{{ crickter.matches }}</td>
-          <td>{{ crickter.runs }}</td>
-          <td>{{ crickter.highestScore }}</td>
-          <td>{{ crickter.centuries }}</td>
-          <td>{{ crickter.fifties }}</td>
-          <td>{{ crickter.battingAverage }}</td>
-          <td>{{ crickter.wickets }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table class="table table-bordered bg-success text-white">
+        <thead class="bg-dark">
+          <tr>
+            <th>Sr.no</th>
+            <th>name</th>
+            <th>country</th>
+            <th>odiDebut</th>
+            <th>matches</th>
+            <th>runs</th>
+            <th>highestScore</th>
+            <th>centuries</th>
+            <th>fifties</th>
+            <th>battingAverage</th>
+            <th>wickets</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let crickter of cricketers; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ crickter.name }}</td>
+            <td>{{ crickter.country }}</td>
+            <td>{{ crickter.odiDebut }}</td>
+            <td>{{ crickter.matches }}</td>
+            <td>{{ crickter.runs }}</td>
+            <td>{{ crickter.highestScore }}</td>
+            <td>{{ crickter.centuries }}</td>
+            <td>{{ crickter.fifties }}</td>
+            <td>{{ crickter.battingAverage }}</td>
+            <td>{{ crickter.wickets }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
