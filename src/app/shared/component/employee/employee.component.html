@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="col-md-12">
+    <table class="table table-bordered bg-success text-white">
+      <thead class="bg-dark">
+        <tr>
+          <th>Sr.no</th>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.department }}</td>
+          <td>{{ employee.salary }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

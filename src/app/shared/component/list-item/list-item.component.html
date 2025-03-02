@@ -1,0 +1,13 @@
+<div class="contianer">
+  <div class="col-md-12 mb-5 mt-5">
+    <h4 class="bg-dark text-white p-3 mb-0 text-center">List of cricketers</h4>
+    <ul class="list-group">
+      <li
+        *ngFor="let cricket of cricketers"
+        class="list-group-item text-center bg-success text-white"
+      >
+        {{ cricket.name }}
+      </li>
+    </ul>
+  </div>
+</div>
